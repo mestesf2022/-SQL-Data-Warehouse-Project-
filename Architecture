@@ -1,0 +1,5 @@
+This SQL Server Data Warehouse is built using a modern, layered design that separates raw ingestion, business transformation, and analytical consumption to ensure reliability and performance.
+
+Data is first ingested into staging tables for validation and standardization. Cleaned data is then modeled into business-ready fact and dimension tables optimized for analytical workloads. The final layer exposes query-optimized views designed for reporting and BI tools.
+
+This architecture enables scalable data processing, consistent metrics, and fast analytical querying while keeping source data isolated from business logic.
