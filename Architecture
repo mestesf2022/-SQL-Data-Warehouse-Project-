@@ -1,5 +1,10 @@
-This SQL Server Data Warehouse is built using a modern, layered design that separates raw ingestion, business transformation, and analytical consumption to ensure reliability and performance.
+Architecture
 
-Data is first ingested into staging tables for validation and standardization. Cleaned data is then modeled into business-ready fact and dimension tables optimized for analytical workloads. The final layer exposes query-optimized views designed for reporting and BI tools.
+This SQL Server Data Warehouse follows a layered architecture that clearly separates data ingestion, transformation, and analytics to ensure performance, reliability,
+and governance.
 
-This architecture enables scalable data processing, consistent metrics, and fast analytical querying while keeping source data isolated from business logic.
+Data from CRM and ERP systems is ingested into SQL Server and stored in the Bronze layer, preserving raw source data. 
+It is then validated, cleansed, and transformed in the Silver layer. 
+The Gold layer contains business-ready fact and dimension models along with query-optimized views designed for reporting and BI consumption.
+
+This design provides end-to-end data traceability, consistent business metrics, and scalable analytics while keeping source systems and business logic cleanly isolated.
